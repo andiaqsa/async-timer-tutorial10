@@ -113,11 +113,11 @@ fn main() {
 
     spawner.spawn(async {
         println!("Andi's Komputer: howdy!");
-        
         TimerFuture::new(Duration::from_secs(2)).await;
-        
         println!("Andi's Komputer: done!");
     });
+
+    println!("Andi's Komputer: hey hey");
 
     drop(spawner);
 
